@@ -1,7 +1,6 @@
 body {
 	background: linear-gradient(180deg, #6ea6f3, #0e0e96, #010105);
-	font-family: 'Fira Sans', sans-serif;	
-	width: 100%;
+	font-family: 'Comfortaa', cursive;	width: 100%;
 	margin: 0 auto;
 	color: white ;
 }
@@ -154,6 +153,7 @@ li a:hover:after {
 .imginfo {
 	float: right;
 	margin-right: 95px;
+	margin-top: 100px;
 }
 
 .foc {
@@ -233,14 +233,6 @@ p {
 	text-align: center;
 }
 
-.colorli {
-	color: #E27D60;
-	text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
-	text-transform: uppercase;
-	font-size: 28px;
-	font-weight: bold;
-
-}
 
 .aboutli {
 	list-style: none;
@@ -248,23 +240,51 @@ p {
 	text-transform: uppercase;
 	user-select: none;
 	margin: 30px;
-
+	background: rgba(0, 0, 0,0.4);
+	border-radius: 30px;
+	height: 120px;
+	width: 1540px;
+	height: 130px;
 }
 
 .aboutli1 {
 	display: flex;
 	list-style: none;
-	font-size: 28px;
+	font-size: 20px;
+	font-weight: 300;
 	text-transform: uppercase;
 	user-select: none;
 	margin: 30px;
 	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.blocks {
+	background: rgba(0, 0, 0,0.4);
+	border-radius: 50px;
+	width: 400px;
+	height: 400px;
+	text-align: justify;
+}
+
+.txtblock {
+	text-align: justify;
+	height: 350px;
+	width: 350px;
+	font-size: 22px;
+	font-weight: 300;
+	text-transform: uppercase;
+	user-select: none;
+
 }
 
 .aboutul {
 	vertical-align: middle;
 	display: inline-block;
 	margin: 60px auto;
+	width: 1800px;
 }
 
 .footer {
@@ -455,4 +475,172 @@ input[type='reset']:hover {
 	width: 400px;
 	flex-direction: row;
 	text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+   body {
+      width: 100%;
+   }
+
+   .navmenu {
+   		justify-content: center;
+      width: 100%;
+   		height: auto;
+   		width: auto;
+   }
+
+   .logpic {
+   		visibility: hidden;
+   		height: 0;
+   		width: 0;
+   }
+
+
+   ul {
+   		padding: 0 0;
+   }
+
+   li {
+   		font-size: 10px;
+   		margin: 10px;
+   		align-content: center;
+   }
+
+   li a {
+   	font-size: 10px;
+   }
+
+		li a:hover {
+			list-style: none;
+			text-decoration: none;
+			color: white;
+			font-size: 10px;
+			text-shadow: none;
+}
+
+
+   .info {
+   		margin-top: 750px;
+      width: 100%;
+   		height: auto;
+   		width: auto;
+   }
+
+   h1 {
+   	font-size: 15px;
+   }
+
+   p {
+   	font-size: 10px;
+   }
+
+		.imgr {
+			border-radius: 100px;
+			border: 3px solid transparent;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+		}
+
+   .intro {
+      width: 100%;
+   		height: auto;
+   		width: auto;
+   }
+
+   .foc {
+			width: 400px;
+			height: 300px;
+
+   }
+
+   .about {
+   	 	width: 100%;
+   		height: auto;
+   		width: auto;
+   }
+
+.aboutli {
+	list-style: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	user-select: none;
+	margin: 15px;
+	background: rgba(0, 0, 0,0.4);
+	border-radius: 30px;
+	height: 120px;
+	width: 750px;
+	height: 60px;
+}
+
+.aboutli1 {
+	display: flex;
+	list-style: none;
+	font-size: 10px;
+	font-weight: 300;
+	text-transform: uppercase;
+	user-select: none;
+	margin: 15px;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.blocks {
+	background: rgba(0, 0, 0,0.4);
+	border-radius: 25px;
+	width: 200px;
+	height: 200px;
+	text-align: justify;
+}
+
+.txtblock {
+	text-align: justify;
+	height: 175px;
+	width: 175px;
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+	user-select: none;
+
+}
+
+.aboutul {
+	vertical-align: middle;
+	display: inline-block;
+	margin: 30px auto;
+	width: 900px;
+}
+
+
+   .title {
+   		font-size: 38px;
+   		height: auto;
+   		width: auto;
+   }
+
+   .footer {
+      width: 100%;
+   }
+
+   .footr {
+   	flex-direction: column;
+   }
+
+   .buttonSN {
+   		width: 175px;
+   		height: 60px;
+   }
+
+   .textbtn {
+   		font-size: 15px;
+   }
+
+   .footertitle {
+   		font-size: 15px;
+   		align-items: center;
+   		padding: 0;
+   }
 }
