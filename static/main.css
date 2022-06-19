@@ -379,7 +379,6 @@ form {
 	text-align: center;
 	margin: 30px;
 	padding-top: 320px;
-
 }
 
 .abouts {
@@ -550,8 +549,9 @@ input[type='reset']:hover {
    }
 
    .foc {
-			width: 400px;
-			height: 300px;
+			width: 350px;
+			height: 250px;
+			vertical-align: middle;
 
    }
 
@@ -643,4 +643,27 @@ input[type='reset']:hover {
    		align-items: center;
    		padding: 0;
    }
+}
+
+.copy {
+	float: right;
+	padding-top: 300px;
+	padding-right: 30px;
+	color: white;
+	font-size: 10px;
+}
+
+.policy {
+	color: white;
+	font-size: 10px;
+}
+
+.policyn {
+	text-align: center;
+	margin: 30px;
+	padding-top: 320px;
+}
+
+.abouts {
+	font-size: 10px;
 }
