@@ -643,7 +643,7 @@ input[type='reset']:hover {
    		align-items: center;
    		padding: 0;
    }
-}
+
 
 .copy {
 	float: right;
@@ -666,4 +666,5 @@ input[type='reset']:hover {
 
 .abouts {
 	font-size: 10px;
+}
 }
