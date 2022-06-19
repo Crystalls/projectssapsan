@@ -25,12 +25,11 @@ class User(db.Model):
 
 
 @app.route('/')
-@app.route('/home')
 def index():
     return render_template('/main.html')
 
 
-@app.route('/home', methods=['POST'])  # получение данных при помощи POST
+@app.route('/', methods=['POST'])  # получение данных при помощи POST
 def cf():
     if request.method == 'POST':
         name = request.form['name']
@@ -42,7 +41,7 @@ def cf():
         try:
             db.session.add(user)
             db.session.commit()
-            return redirect('/home')
+            return redirect('/')
 
         except:
             print('Ошибка:\n', traceback.format_exc())

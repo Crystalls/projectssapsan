@@ -236,7 +236,7 @@ p {
 
 .aboutli {
 	list-style: none;
-	font-size: 20px;
+	font-size: 25px;
 	text-transform: uppercase;
 	user-select: none;
 	margin: 30px;
@@ -244,13 +244,13 @@ p {
 	border-radius: 30px;
 	height: 120px;
 	width: 1540px;
-	height: 130px;
+	height: 190px;
 }
 
 .aboutli1 {
 	display: flex;
 	list-style: none;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 300;
 	text-transform: uppercase;
 	user-select: none;
@@ -265,7 +265,7 @@ p {
 	background: rgba(0, 0, 0,0.4);
 	border-radius: 50px;
 	width: 400px;
-	height: 400px;
+	height: 550px;
 	text-align: justify;
 }
 
@@ -273,7 +273,7 @@ p {
 	text-align: justify;
 	height: 350px;
 	width: 350px;
-	font-size: 22px;
+	font-size: 25px;
 	font-weight: 300;
 	text-transform: uppercase;
 	user-select: none;
@@ -396,7 +396,7 @@ form {
 .flexbox {
 	display: flex;
 	justify-content: center;
-	width: 800px;
+	width: 1200px;
 	height: 200px;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -407,7 +407,7 @@ form {
 
 input[type='text'] {
 	height: 40px;
-	width: 220px;
+	width: 420px;
 	border: solid 1px black;
 	border-radius: 10px;
 	padding: 5px;
@@ -418,7 +418,7 @@ input[type='text'] {
 textarea[name='text'] {
 	box-sizing: border-box
 	white-space: pre-line;
-	width: 200px;
+	width: 500px;
 	height: 100px;
 	resize: none;
 	min-width: 400px;
