@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" 
+	content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=yes">
+	<link rel="stylesheet" href="{{ url_for( 'static', filename='main.css', v=1)}}"/>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='harvest.png') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+	<title>Проект "Сапсан"</title>
+
+</head>
+<body>
+	<div class="intro">
+		<nav class="navmenu">
+				<div class="logpic"><img src="{{ url_for('static', filename='logo.png') }}" height="60px" width="60px"></div>
+					<ul>
+						<li class="navstyle"><a href="#home" id="nav" class="bloom">Главная</a></li>
+						<li class="navstyle"><a href="#info" id="nav" class="bloom">Наша команда</a></li>
+						<li class="navstyle"><a href="#about" id="nav" class="bloom">О нас</a></li>
+						<li class="navstyle"><a href="#contacts" id="nav" class="bloom">Контакты</a></li>
+					</ul>	
+						<li class="navstyle"><a href="#">+7 (927) 255-59-49</a></li>
+		</nav>
+		<div class="textblock">
+			<div class="infotitle">Актуальность проекта
+			<div class="infotext"> Актуальность проекта обсуловлена преимуществами дронов а также развивающейся пожароопасности по всей России.</div></div>
+			<div class="imginfo"><img src="static/info2.png" class="foc" height="500px" width="750px"></div>
+		</div>
+	</div>	
+
+<section class="info" id="info">
+	<div class="infocommand"> Наша команда </div>
+		<div class="infoc">
+			<ul class="comp">
+				<li class="infocmpany"><img src="static/1.png" class="imgr">
+					<h1>Бардикова Анастасия</h1>
+					<p>Координатор проекта</p></li>
+				<li class="infocmpany"><img src="static/2.png" class="imgr"> 		<h1>Попов Дмитрий</h1> 
+					<p>HR-менеджер</p></li>
+				<li class="infocmpany"><img src="static/3.png" class="imgr"> 		<h1>Пугачева Анна</h1><br>
+					<p>Исполнительный директор</p></li>
+				<li class="infocmpany"><img src="static/4.png" class="imgr"> 		<h1>Люманов Кирилл</h1>
+					<p>Финансовый директор</p></li>
+			</ul>
+		</div>
+</section>
+
+<section class="about" id="about">
+	<div class="titleabout"> О нас </div>
+		<div align="center">
+				<ul class="aboutul">
+					<li class="aboutli">
+						<span class="colorli">Описание:</span> В результате реализации нашего проекта мы придерживаемся целей обеспечения безопасности людей и окружающей среды, путем отслеживания и патрулирования опасных и менее опасных регионов. Также обеспечение быстрой и безопасной доставки определенных товаров, таких как продукты, лекарства и др. Наше предложение включает в себя создание трех видов дронов: МЧС дрон, Полиц дрон и Дрон Курьер.
+					</li>
+					<li class="aboutli1">
+						<span class="colorli">Задачи:</span> 
+						<div>МЧС дрон включает в себя такие функции, как:
+						Оперативный поиск очагов возгорания при помощи тепловизора;
+						Патрулирование лесов с целью недопущения распространения огня;
+						Планирование безопасных маршрутов для перемещения сотрудников и эвакуации пострадавших.</div>
+						<div>Полиц дрон включает в себя такие функции, как:
+						Поиск и обнаружение людей с помощью тепловизора;
+						Контроль за соблюдением порядка на массовых мероприятиях;
+						Мониторинг дорожной ситуации и анализ мест ДТП</div>
+						<div>Дрон Курьер можно охарактеризовать так:
+						Доставочный контейнер помещается в отсек в нижней части дрона или крепится непосредственно к самому аппарату. Клиент получает посылку, забирая её из отсека спустившегося на землю дрона или отсоединяя от веревки спускового механизма.</div>
+					</li>		
+				</ul>
+			</div>
+</section>
+
+
+<footer class="footer" id="contacts">
+		<form method="post">
+			<h2>Форма обратной связи</h2>
+			<div class="flexbox">
+			<input class="flexbox_item" type="text" name="name" id="name" class="forms" placeholder="Введите имя" required><br>
+			<input class="flexbox_item" type="text" name="email" id="email" class="forms" placeholder="Введите email" required><br>
+			<textarea class="flexbox_item" name="text" id="text" class="forms" placeholder="Введите текст" required></textarea><br>
+			<div class="flexbox_btn">
+			<input type="submit" value="Отправить" class="butthon_success">
+			<input type="reset" value="Очистить" class="butthon_success"><br>
+			</div>
+			</div>
+
+		</form>
+
+			<div class="abouts">projectsapsan@gmail.com <br>
+				Россия, 400005, Волгоград, ул. Советская, 14а
+			</div>
+				<div class="copy">Crystal Copyright © 2022</div>
+			<div class="policyn"><a href="#" class="policy">Политика приватности</a> | <a href="#" class="policy">Условия пользования</a></div>
+	</footer>
+</body>
+</html>
