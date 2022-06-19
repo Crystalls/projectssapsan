@@ -24,6 +24,7 @@ class User(db.Model):
         return '<User %r>' % self.id
 
 
+@app.route('/')
 @app.route('/home')
 def index():
     return render_template('/main.html')
@@ -51,4 +52,4 @@ def cf():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8080, use_reloader=False)
